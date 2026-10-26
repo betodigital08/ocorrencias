@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocorrências do Plantão</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+  :root{
+    --fundo:#0f1720; --painel:#17222e; --painel2:#1f2d3b; --borda:#2c3e50;
+    --texto:#e8eef4; --suave:#93a4b5; --azul:#2f80ed; --verde:#27ae60;
+    --vermelho:#e5484d; --laranja:#f2994a;
+    --lit:#2bb3c0; --nor:#9b6bdf; --oes:#e0a526;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fundo);color:var(--texto);font-family:Segoe UI,Arial,sans-serif;font-size:17px}
+  button{font-family:inherit;cursor:pointer}
+  header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+    padding:12px 16px;background:var(--painel);border-bottom:2px solid var(--borda)}
+  header h1{font-size:20px;margin:0;letter-spacing:.5px}
+  .selos{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .selo{padding:6px 12px;border-radius:20px;font-size:14px;font-weight:700;background:var(--painel2);border:1px solid var(--borda)}
+  .selo.plantao{background:#173a5e;border-color:var(--azul)}
+  .selo.on{color:#7ee2a8;border-color:var(--verde)}
+  .selo.off{color:#ffb4b4;border-color:var(--vermelho)}
+  .btn-encerrar{background:var(--vermelho);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700}
+  nav{display:flex;gap:4px;padding:10px 16px 0;background:var(--fundo)}
+  nav button{flex:1;max-width:240px;padding:12px;border:1px solid var(--borda);border-bottom:0;border-radius:10px 10px 0 0;
+    background:var(--painel);color:var(--suave);font-weight:700;font-size:15px}
+  nav button.ativa{background:var(--painel2);color:var(--texto);border-color:var(--azul)}
+  main{padding:0 16px 40px}
+  section{display:none;background:var(--painel2);border:1px solid var(--borda);border-radius:0 10px 10px 10px;padding:18px}
+  section.ativa{display:block}
+  .tela-plantao{max-width:640px;margin:40px auto;padding:24px;background:var(--painel);border:1px solid var(--borda);border-radius:14px;text-align:center}
+  .tela-plantao h2{margin-top:0}
+  .grade-plantoes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  .grade-plantoes button{padding:22px 10px;font-size:20px;font-weight:800;border-radius:12px;border:2px solid var(--azul);
+    background:#132b45;color:var(--texto)}
+  .grade-plantoes button:hover{background:var(--azul)}
+  label.rotulo{display:block;font-weight:700;color:var(--suave);margin:16px 0 6px;font-size:14px;letter-spacing:.5px}
+  .campo-numero{display:flex;align-items:stretch;max-width:520px}
+  .prefixo{background:#0b121a;border:2px solid var(--borda);border-right:0;border-radius:10px 0 0 10px;
+    padding:12px 14px;font-size:26px;font-weight:800;color:var(--suave);font-family:Consolas,monospace}
+  .campo-numero input{flex:1;min-width:0;border-radius:0 10px 10px 0}
+  input[type=text]{width:100%;background:#0b121a;color:var(--texto);border:2px solid var(--borda);border-radius:10px;
+    padding:12px 14px;font-size:22px;outline:none}
+  input[type=text]:focus{border-color:var(--azul)}
+  #numero{font-size:26px;font-weight:800;font-family:Consolas,monospace;letter-spacing:2px}
+  .contador{font-size:14px;color:var(--suave);margin-top:4px}
+  .contador.ok{color:#7ee2a8}
+  .caixa-equipe{position:relative;max-width:520px}
+  .sugestoes{position:absolute;left:0;right:0;top:100%;z-index:5;background:#0b121a;border:2px solid var(--azul);
+    border-top:0;border-radius:0 0 10px 10px;max-height:240px;overflow:auto;display:none}
+  .sugestoes div{padding:10px 14px;font-size:18px;cursor:pointer;display:flex;justify-content:space-between}
+  .sugestoes div.marcada,.sugestoes div:hover{background:var(--painel2)}
+  .sugestoes small{color:var(--suave)}
+  .areas{display:flex;gap:10px;flex-wrap:wrap}
+  .areas button{flex:1;min-width:130px;max-width:200px;padding:14px;font-size:18px;font-weight:800;border-radius:10px;
+    background:#0b121a;color:var(--texto);border:2px solid var(--borda)}
+  .areas button.sel[data-area="LITORÂNEA"]{background:var(--lit);border-color:var(--lit);color:#04161a}
+  .areas button.sel[data-area="NORTE"]{background:var(--nor);border-color:var(--nor);color:#120626}
+  .areas button.sel[data-area="OESTE"]{background:var(--oes);border-color:var(--oes);color:#1d1400}
+  .btn-registrar{margin-top:22px;width:100%;max-width:520px;padding:18px;font-size:22px;font-weight:800;border:0;
+    border-radius:12px;background:var(--verde);color:#fff}
+  .btn{padding:10px 14px;border-radius:8px;border:1px solid var(--borda);background:var(--painel);color:var(--texto);font-weight:700}
+  .btn.azul{background:var(--azul);border-color:var(--azul)}
+  .btn.verm{background:transparent;border-color:var(--vermelho);color:#ffb4b4}
+  .btn.peq{padding:6px 10px;font-size:14px}
+  h3{margin:28px 0 10px;font-size:16px;color:var(--suave);letter-spacing:.5px}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:10px 8px;border-bottom:1px solid var(--borda);text-align:left}
+  th{color:var(--suave);font-size:13px;letter-spacing:.5px}
+  td.num{font-family:Consolas,monospace;font-weight:800;font-size:18px}
+  .tag{padding:3px 9px;border-radius:12px;font-size:13px;font-weight:800}
+  .tag.LITORÂNEA{background:var(--lit);color:#04161a}
+  .tag.NORTE{background:var(--nor);color:#120626}
+  .tag.OESTE{background:var(--oes);color:#1d1400}
+  .vazio{color:var(--suave);padding:18px 0;text-align:center}
+  .barra-filtros{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+  .chips button{padding:8px 14px;border-radius:20px;border:1px solid var(--borda);background:var(--painel);color:var(--texto);font-weight:700}
+  .chips button.sel{background:var(--azul);border-color:var(--azul)}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .resumo{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 14px}
+  .resumo div{background:var(--painel);border:1px solid var(--borda);border-radius:10px;padding:10px 14px;font-weight:700}
+  .resumo b{font-size:22px;display:block}
+  textarea{width:100%;min-height:110px;background:#0b121a;color:var(--texto);border:2px solid var(--borda);border-radius:10px;
+    padding:10px;font-family:Consolas,monospace;font-size:13px}
+  .dica{color:var(--suave);font-size:14px;line-height:1.5}
+  #toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);padding:14px 22px;border-radius:10px;
+    font-weight:700;font-size:17px;display:none;z-index:50;max-width:90%;text-align:center;box-shadow:0 6px 24px #0008}
+  #toast.ok{background:var(--verde);color:#fff}
+  #toast.erro{background:var(--vermelho);color:#fff}
+  #toast.info{background:var(--azul);color:#fff}
+  /* ---- Aba Câmeras ---- */
+  select{background:#0b121a;color:var(--texto);border:2px solid var(--borda);border-radius:10px;padding:10px;font-size:16px;font-family:inherit}
+  .btn.danger{background:transparent;border-color:var(--vermelho);color:#ffb4b4}
+  .muted{color:var(--suave);padding:10px 0}
+  .aviso-edicao{background:#3a2a0d;border:1px solid var(--laranja);color:#ffd7a8;border-radius:10px;padding:10px 14px;margin-top:10px;display:none}
+  .faixa-info{background:#132b45;border:1px solid var(--azul);border-radius:10px;padding:10px 14px;margin-bottom:6px}
+  .cab-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:640px}
+  .ponto{background:var(--painel);border:1px solid var(--borda);border-left:6px solid #FFC000;border-radius:10px;padding:10px 12px;margin-bottom:10px}
+  .ponto .linha1{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+  .ponto .linha1 input{width:130px;font-weight:800;font-family:Consolas,monospace;font-size:17px;padding:8px}
+  .ponto .grade{display:grid;grid-template-columns:2.2fr 1fr 1fr 190px 1.3fr;gap:8px}
+  .ponto label{display:block;font-size:11px;color:var(--suave);font-weight:700;margin-bottom:3px;letter-spacing:.4px}
+  .ponto textarea{min-height:70px;font-family:inherit;font-size:14px;padding:8px}
+  .ponto select{font-size:15px;padding:8px;width:100%}
+  details.importar{margin-top:22px;background:var(--painel);border:1px dashed var(--azul);border-radius:10px;padding:10px 14px}
+  details.importar summary{cursor:pointer;font-weight:800}
+  /* Tabela no mesmo padrão da planilha do Drive */
+  .rolagem{overflow-x:auto}
+  .tab-cam{width:100%;min-width:1100px;border-collapse:collapse;table-layout:fixed;word-wrap:break-word;background:#fff;color:#111;font-size:13px;font-family:Arial,sans-serif}
+  .tab-cam .titulo-geral th{background:#3d3d3d;color:#fff;font-size:16px;padding:8px;text-align:center;border:1px solid #3d3d3d}
+  .tab-cam .cab th{background:#FFC000;color:#111;font-weight:800;text-align:center;border:1px solid #9a7a00;font-size:12px;padding:8px 6px}
+  .tab-cam td{border:1px solid #bbb;vertical-align:top;padding:5px 6px}
+  .tab-cam td.eq{background:#e9e9e9;font-weight:800;text-align:center;vertical-align:middle}
+  .tab-cam td.qmd{text-align:center;vertical-align:middle}
+  .tab-cam td.acoes{background:#f4f4f4;text-align:center;vertical-align:middle;white-space:nowrap}
+  .tab-cam td.acoes .quem{font-size:11px;color:#666;margin-bottom:6px;white-space:normal}
+  .tab-cam .btn{background:#fff;color:#111;border-color:#999}
+  .tab-cam .btn.verm{color:#b3261e;border-color:#b3261e}
+  .pv{font-weight:800}.pv.SIM{color:#1f6f43}.pv.PARCIAL{color:#a86a0c}.pv.NAO{color:#b3261e}.pv.PEND{color:#999;font-weight:normal;font-style:italic}
+  @media (max-width:900px){ .ponto .grade{grid-template-columns:1fr} .cab-form{grid-template-columns:1fr} }
+  @media (max-width:600px){ .prefixo,#numero{font-size:20px} .grade-plantoes{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📋 OCORRÊNCIAS DO PLANTÃO</h1>
+  <div class="selos">
+    <span class="selo plantao" id="seloPlantao">SEM PLANTÃO</span>
+    <span class="selo" id="seloModo">LOCAL</span>
+    <button class="btn-encerrar" id="btnEncerrar" style="display:none">ENCERRAR PLANTÃO</button>
+  </div>
+</header>
+
+<!-- Tela exibida quando não há plantão ativo -->
+<div class="tela-plantao" id="telaPlantao" style="display:none">
+  <h2>Qual plantão está assumindo?</h2>
+  <div class="dica">Escolha o supervisor do plantão para começar a registrar.</div>
+  <div class="grade-plantoes" id="gradePlantoes"></div>
+</div>
+
+<!-- Tela exibida enquanto conecta na nuvem -->
+<div class="tela-plantao" id="telaCarregando" style="display:none">
+  <h2>☁ Conectando à nuvem...</h2>
+  <div class="dica">Aguarde alguns segundos. Se demorar, confira a internet deste PC.</div>
+</div>
+
+<div id="areaTrabalho" style="display:none">
+  <nav>
+    <button data-aba="abaRegistrar" class="ativa">REGISTRAR</button>
+    <button data-aba="abaConsulta">CONSULTA (SUPERVISOR)</button>
+    <button data-aba="abaCameras">📷 CÂMERAS</button>
+    <button data-aba="abaConfig">CONFIGURAÇÕES</button>
+  </nav>
+  <main>
+    <!-- ABA REGISTRAR -->
+    <section id="abaRegistrar" class="ativa">
+      <label class="rotulo">NÚMERO DA OCORRÊNCIA</label>
+      <div class="campo-numero">
+        <span class="prefixo" id="prefixo">FORCA2026</span>
+        <input type="text" id="numero" inputmode="numeric" autocomplete="off" placeholder="000000000">
+      </div>
+      <div class="contador" id="contador">0 de 9 dígitos</div>
+
+      <label class="rotulo">EQUIPE</label>
+      <div class="caixa-equipe">
+        <input type="text" id="equipe" autocomplete="off" placeholder="Digite a equipe (ex.: VTR 01)">
+        <div class="sugestoes" id="sugestoes"></div>
+      </div>
+
+      <label class="rotulo">ÁREA</label>
+      <div class="areas" id="areasRegistro"></div>
+
+      <button class="btn-registrar" id="btnRegistrar">✔ REGISTRAR OCORRÊNCIA</button>
+
+      <h3>ÚLTIMOS REGISTROS DESTE PLANTÃO</h3>
+      <div id="listaRecentes"></div>
+    </section>
+
+    <!-- ABA CONSULTA -->
+    <section id="abaConsulta">
+      <div class="resumo" id="resumo"></div>
+      <div class="barra-filtros">
+        <div class="chips" id="chipsArea"></div>
+        <input type="text" id="filtroEquipe" placeholder="Filtrar por equipe" style="max-width:260px;font-size:16px;padding:9px 12px">
+        <button class="btn azul" id="btnCopiarTodas">📋 COPIAR TODAS</button>
+      </div>
+      <div id="tabelaConsulta"></div>
+    </section>
+
+    <!-- ABA CÂMERAS (mesmo formato da planilha "Controle de câmeras disponíveis"; não apaga ao encerrar o plantão) -->
+    <section id="abaCameras">
+      <div class="faixa-info">📌 Controle <b>permanente</b> e compartilhado por todos os plantões. <b>Não é apagado</b> ao encerrar o plantão.</div>
+
+      <div class="cab-form">
+        <div>
+          <label class="rotulo">EQUIPE</label>
+          <input type="text" id="camEquipe" list="listaCamEquipes" autocomplete="off" placeholder="Ex.: MOT01">
+          <datalist id="listaCamEquipes"></datalist>
+        </div>
+        <div>
+          <label class="rotulo">QMD</label>
+          <input type="text" id="camQmd" autocomplete="off" placeholder="Ex.: 209">
+        </div>
+      </div>
+      <div class="aviso-edicao" id="camAvisoEdicao"></div>
+
+      <label class="rotulo">ÁREA (opcional, serve só para filtrar)</label>
+      <div class="areas" id="areasCam"></div>
+
+      <label class="rotulo">ATUAÇÃO / VIAS — PONTOS DA EQUIPE</label>
+      <div id="cam-box"></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button type="button" class="btn" id="btnAddPtr">➕ ADICIONAR PTR (percurso)</button>
+        <button type="button" class="btn" id="btnAddPb">➕ ADICIONAR PB (ponto base)</button>
+      </div>
+
+      <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;align-items:center">
+        <button class="btn-registrar" id="btnCamSalvar" style="margin-top:0">✔ SALVAR EQUIPE</button>
+        <button class="btn" id="btnCamLimpar">LIMPAR FORMULÁRIO</button>
+      </div>
+
+      <details class="importar">
+        <summary>📥 IMPORTAR DA PLANILHA DO DRIVE (copiar e colar)</summary>
+        <div class="dica" style="margin:8px 0">
+          1) Na planilha, selecione as linhas da tabela (da coluna <b>EQUIPE</b> até <b>VIAS SEM CÂMERAS</b>). Pode incluir o cabeçalho.<br>
+          2) Copie (<b>Ctrl+C</b>), clique na caixa abaixo e cole (<b>Ctrl+V</b>). 3) Clique em <b>IMPORTAR</b>.<br>
+          Equipes que já existem no app têm as vias atualizadas; câmeras já preenchidas no app são mantidas.
+        </div>
+        <textarea id="txtImportar" placeholder="Cole aqui as linhas copiadas da planilha"></textarea>
+        <div style="margin-top:8px"><button class="btn azul" id="btnImportar">IMPORTAR</button></div>
+      </details>
+
+      <h3>CONTROLE DE CÂMERAS (TODOS OS PLANTÕES)</h3>
+      <div class="resumo" id="camResumo"></div>
+      <div class="barra-filtros">
+        <div class="chips" id="chipsCamArea"></div>
+        <select id="camFiltroVis">
+          <option value="TODAS">Plena visualização: todas</option>
+          <option value="SIM">SIM</option>
+          <option value="PARCIAL">PARCIAL</option>
+          <option value="NAO">NÃO</option>
+          <option value="PEND">Não verificado</option>
+        </select>
+        <input type="text" id="camBusca" placeholder="Buscar equipe, QMD, via ou câmera" style="max-width:280px;font-size:16px;padding:9px 12px">
+        <button class="btn azul" id="btnCamCopiar">📋 COPIAR</button>
+        <button class="btn" id="btnCamPdf">📄 GERAR PDF</button>
+        <button class="btn" id="btnCamCsv">⬇ BAIXAR PLANILHA</button>
+      </div>
+      <div id="camLista" class="rolagem"></div>
+    </section>
+
+    <!-- ABA CONFIGURAÇÕES -->
+    <section id="abaConfig">
+      <h3 style="margin-top:0">EQUIPES SALVAS</h3>
+      <div class="dica">As equipes são salvas sozinhas ao registrar uma ocorrência. Exclua aqui alguma que foi digitada errada.</div>
+      <div id="listaEquipes"></div>
+
+      <h3>SINCRONIZAR NA NUVEM (OPCIONAL)</h3>
+      <div class="dica">
+        Sem nuvem, os registros ficam só neste computador. Para o supervisor consultar pelo celular dele,
+        cole abaixo o <b>firebaseConfig</b> de um projeto com <b>Realtime Database</b> e escolha um código de sala.
+        Todos que usarem o mesmo código veem os mesmos registros.
+      </div>
+      <div id="formNuvem">
+        <label class="rotulo">FIREBASECONFIG</label>
+        <textarea id="cfgFirebase" placeholder='const firebaseConfig = { apiKey: "...", databaseURL: "https://...", ... };'></textarea>
+        <label class="rotulo">CÓDIGO DA SALA</label>
+        <input type="text" id="codSala" placeholder="ex.: ocorrencias bravo" style="max-width:360px;font-size:18px">
+        <div style="margin-top:12px"><button class="btn azul" id="btnConectar">CONECTAR</button></div>
+      </div>
+      <div id="infoNuvem" style="display:none">
+        <p class="dica" id="txtNuvem"></p>
+        <button class="btn verm" id="btnDesconectar">DESCONECTAR E VOLTAR AO MODO LOCAL</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ===================== CONFIGURAÇÕES FIXAS =====================
+const ANO = String(new Date().getFullYear());
+const PREFIXO = 'FORCA' + ANO;
+const PLANTOES = ['SUP FELIPE', 'SUP SAMUEL', 'SUP BRUNO', 'SUP PEDRO'];
+const AREAS = ['LITORÂNEA', 'NORTE', 'OESTE'];
+const CHAVE_DADOS = 'occPlantao_dados';
+const CHAVE_NUVEM = 'occPlantao_nuvem';
+const CHAVE_SEM_NUVEM = 'occPlantao_semNuvem';
+
+// Nuvem já embutida: o app conecta sozinho nesta sala ao abrir
+const CONFIG_PADRAO = `const firebaseConfig = {
+  apiKey: "AIzaSyBWtT7i3oxsGXY3tQSs5VQfpoBB8qUJkS0",
+  authDomain: "operador-fm-f13c1.firebaseapp.com",
+  databaseURL: "https://operador-fm-f13c1-default-rtdb.firebaseio.com",
+  projectId: "operador-fm-f13c1",
+  storageBucket: "operador-fm-f13c1.firebasestorage.app",
+  messagingSenderId: "997096813083",
+  appId: "1:997096813083:web:7ece2d99b1590047037ebe",
+  measurementId: "G-024D0RH9Y0"
+};`;
+const SALA_PADRAO = 'forca';
+
+// ===================== ESTADO DO APP =====================
+let estado = { plantao: null, ocorrencias: {}, equipes: {}, cameras: {} };
+let modo = 'local';          // 'local' ou 'nuvem'
+let db = null;               // conexão Firebase
+let sala = null;             // código da sala na nuvem
+let conectado = false;
+let carregando = false;      // true enquanto espera a nuvem responder
+let areaSelecionada = null;
+let filtroArea = 'TODAS';
+let indiceSugestao = -1;
+let abaAtual = 'abaRegistrar';
+
+// INÍCIO FUNÇÃO: carregarLocal
+function carregarLocal() {
+  try {
+    const salvo = JSON.parse(localStorage.getItem(CHAVE_DADOS) || 'null');
+    if (salvo) estado = { plantao: salvo.plantao || null, ocorrencias: salvo.ocorrencias || {}, equipes: salvo.equipes || {}, cameras: salvo.cameras || {} };
+  } catch (e) { /* sem dados salvos */ }
+}
+// FIM FUNÇÃO: carregarLocal
+
+// INÍCIO FUNÇÃO: salvarLocal
+function salvarLocal() {
+  try { localStorage.setItem(CHAVE_DADOS, JSON.stringify(estado)); }
+  catch (e) { mostrarAviso('Não foi possível salvar neste navegador.', 'erro'); }
+}
+// FIM FUNÇÃO: salvarLocal
+
+// INÍCIO FUNÇÃO: definirCaminho
+// Grava (ou apaga, se valor for null) um item dentro do estado, ex.: "ocorrencias/abc"
+function definirCaminho(obj, caminho, valor) {
+  const partes = caminho.split('/');
+  let atual = obj;
+  for (let i = 0; i < partes.length - 1; i++) {
+    if (atual[partes[i]] == null || typeof atual[partes[i]] !== 'object') atual[partes[i]] = {};
+    atual = atual[partes[i]];
+  }
+  const ultima = partes[partes.length - 1];
+  if (valor === null) {
+    if (partes.length === 1) atual[ultima] = (ultima === 'plantao') ? null : {};
+    else delete atual[ultima];
+  } else {
+    atual[ultima] = valor;
+  }
+}
+// FIM FUNÇÃO: definirCaminho
+
+// INÍCIO FUNÇÃO: aplicarAlteracoes
+// Ponto único de gravação: funciona igual no modo local e na nuvem
+function aplicarAlteracoes(alteracoes) {
+  if (modo === 'nuvem' && db) {
+    db.ref('salas/' + sala).update(alteracoes)
+      .catch(e => mostrarAviso('Erro ao salvar na nuvem: ' + e.message, 'erro'));
+  } else {
+    Object.keys(alteracoes).forEach(c => definirCaminho(estado, c, alteracoes[c]));
+    salvarLocal();
+    renderizarTudo();
+  }
+}
+// FIM FUNÇÃO: aplicarAlteracoes
+
+// INÍCIO FUNÇÃO: gerarId
+function gerarId() {
+  return 'o' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+}
+// FIM FUNÇÃO: gerarId
+
+// INÍCIO FUNÇÃO: normalizarNomeEquipe
+// Deixa em maiúsculas e tira espaços sobrando: "  vtr   01 " vira "VTR 01"
+function normalizarNomeEquipe(texto) {
+  return (texto || '').toUpperCase().replace(/\s+/g, ' ').trim();
+}
+// FIM FUNÇÃO: normalizarNomeEquipe
+
+// INÍCIO FUNÇÃO: chaveEquipe
+// Chave de comparação: "VTR 01", "VTR01" e "vtr-01" viram a mesma equipe
+function chaveEquipe(texto) {
+  return normalizarNomeEquipe(texto).replace(/[^A-Z0-9ÁÉÍÓÚÂÊÔÃÕÇÀÜ]/g, '');
+}
+// FIM FUNÇÃO: chaveEquipe
+
+// INÍCIO FUNÇÃO: escaparHtml
+function escaparHtml(t) {
+  return String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+// FIM FUNÇÃO: escaparHtml
+
+// INÍCIO FUNÇÃO: formatarHora
+function formatarHora(ts) {
+  const d = new Date(ts);
+  return d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+}
+// FIM FUNÇÃO: formatarHora
+
+// INÍCIO FUNÇÃO: formatarData
+function formatarData(ts) {
+  return new Date(ts).toLocaleDateString('pt-BR');
+}
+// FIM FUNÇÃO: formatarData
+
+// INÍCIO FUNÇÃO: mostrarAviso
+let tempoAviso = null;
+function mostrarAviso(texto, tipo) {
+  const t = document.getElementById('toast');
+  t.textContent = texto;
+  t.className = tipo || 'info';
+  t.style.display = 'block';
+  clearTimeout(tempoAviso);
+  tempoAviso = setTimeout(() => { t.style.display = 'none'; }, 3200);
+}
+// FIM FUNÇÃO: mostrarAviso
+
+// INÍCIO FUNÇÃO: copiarTexto
+function copiarTexto(texto, msg) {
+  const reserva = () => {
+    const ta = document.createElement('textarea');
+    ta.value = texto; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); mostrarAviso(msg || 'Copiado!', 'ok'); }
+    catch (e) { mostrarAviso('Não foi possível copiar.', 'erro'); }
+    ta.remove();
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(() => mostrarAviso(msg || 'Copiado!', 'ok')).catch(reserva);
+  } else { reserva(); }
+}
+// FIM FUNÇÃO: copiarTexto
+
+// INÍCIO FUNÇÃO: listaOcorrencias
+// Devolve as ocorrências em ordem de registro (mais antiga primeiro)
+function listaOcorrencias() {
+  return Object.keys(estado.ocorrencias || {})
+    .map(id => Object.assign({ id: id }, estado.ocorrencias[id]))
+    .sort((a, b) => a.ts - b.ts);
+}
+// FIM FUNÇÃO: listaOcorrencias
+
+// ===================== PLANTÃO =====================
+
+// INÍCIO FUNÇÃO: iniciarPlantao
+function iniciarPlantao(nome) {
+  aplicarAlteracoes({ plantao: { sup: nome, inicio: Date.now() } });
+  mostrarAviso('Plantão ' + nome + ' iniciado.', 'ok');
+  setTimeout(() => document.getElementById('numero').focus(), 100);
+}
+// FIM FUNÇÃO: iniciarPlantao
+
+// INÍCIO FUNÇÃO: encerrarPlantao
+function encerrarPlantao() {
+  const total = listaOcorrencias().length;
+  const sup = estado.plantao ? estado.plantao.sup : '';
+  if (!confirm('Encerrar o plantão ' + sup + '?\n\n' + total + ' ocorrência(s) serão APAGADAS.\n' +
+               'Se o supervisor ainda não pegou, use antes "COPIAR TODAS" na aba Consulta.')) return;
+  if (total > 0 && !confirm('Confirma mesmo? Esta ação não pode ser desfeita.')) return;
+  aplicarAlteracoes({ plantao: null, ocorrencias: null });
+  mostrarAviso('Plantão encerrado. Lista zerada.', 'ok');
+}
+// FIM FUNÇÃO: encerrarPlantao
+
+// ===================== REGISTRO =====================
+
+// INÍCIO FUNÇÃO: tratarDigitacaoNumero
+// Aceita só números. Se colar o número inteiro (FORCA2026...), aproveita só os 9 finais.
+function tratarDigitacaoNumero() {
+  const campo = document.getElementById('numero');
+  let digitos = campo.value.replace(/\D/g, '');
+  if (digitos.length === 13) {
+    if (digitos.slice(0, 4) !== ANO) mostrarAviso('Atenção: o número colado é de outro ano (' + digitos.slice(0, 4) + ').', 'erro');
+    digitos = digitos.slice(4);
+  }
+  digitos = digitos.slice(0, 9);
+  campo.value = digitos;
+  const cont = document.getElementById('contador');
+  cont.textContent = digitos.length + ' de 9 dígitos' + (digitos.length === 9 ? ' ✔' : '');
+  cont.className = 'contador' + (digitos.length === 9 ? ' ok' : '');
+}
+// FIM FUNÇÃO: tratarDigitacaoNumero
+
+// INÍCIO FUNÇÃO: selecionarArea
+function selecionarArea(area) {
+  areaSelecionada = area;
+  document.querySelectorAll('#areasRegistro button').forEach(b => b.classList.toggle('sel', b.dataset.area === area));
+}
+// FIM FUNÇÃO: selecionarArea
+
+// INÍCIO FUNÇÃO: mostrarSugestoes
+function mostrarSugestoes() {
+  const campo = document.getElementById('equipe');
+  const caixa = document.getElementById('sugestoes');
+  const chave = chaveEquipe(campo.value);
+  const equipes = Object.values(estado.equipes || {});
+  const achadas = chave
+    ? equipes.filter(e => chaveEquipe(e.nome).includes(chave)).sort((a, b) => a.nome.localeCompare(b.nome)).slice(0, 8)
+    : [];
+  // Se o que foi digitado já é uma equipe conhecida, preenche a área sozinho
+  const exata = (estado.equipes || {})[chave];
+  if (exata && exata.area) selecionarArea(exata.area);
+
+  if (!achadas.length || (achadas.length === 1 && chaveEquipe(achadas[0].nome) === chave)) {
+    caixa.style.display = 'none'; indiceSugestao = -1; return;
+  }
+  indiceSugestao = -1;
+  caixa.innerHTML = achadas.map((e, i) =>
+    '<div data-acao="sugestao" data-nome="' + escaparHtml(e.nome) + '" data-i="' + i + '">' +
+    '<span>' + escaparHtml(e.nome) + '</span><small>' + escaparHtml(e.area || '') + '</small></div>').join('');
+  caixa.style.display = 'block';
+}
+// FIM FUNÇÃO: mostrarSugestoes
+
+// INÍCIO FUNÇÃO: escolherEquipe
+function escolherEquipe(nome) {
+  document.getElementById('equipe').value = nome;
+  document.getElementById('sugestoes').style.display = 'none';
+  indiceSugestao = -1;
+  const e = (estado.equipes || {})[chaveEquipe(nome)];
+  if (e && e.area) selecionarArea(e.area);
+}
+// FIM FUNÇÃO: escolherEquipe
+
+// INÍCIO FUNÇÃO: teclaNaEquipe
+// Setas para navegar nas sugestões; Enter escolhe a sugestão marcada ou registra
+function teclaNaEquipe(ev) {
+  const caixa = document.getElementById('sugestoes');
+  const itens = caixa.querySelectorAll('div');
+  const aberta = caixa.style.display === 'block' && itens.length;
+  if (ev.key === 'ArrowDown' && aberta) { ev.preventDefault(); indiceSugestao = Math.min(indiceSugestao + 1, itens.length - 1); }
+  else if (ev.key === 'ArrowUp' && aberta) { ev.preventDefault(); indiceSugestao = Math.max(indiceSugestao - 1, 0); }
+  else if (ev.key === 'Enter') {
+    ev.preventDefault();
+    if (aberta && indiceSugestao >= 0) { escolherEquipe(itens[indiceSugestao].dataset.nome); return; }
+    caixa.style.display = 'none';
+    registrarOcorrencia();
+    return;
+  } else if (ev.key === 'Escape') { caixa.style.display = 'none'; return; }
+  else return;
+  itens.forEach((d, i) => d.classList.toggle('marcada', i === indiceSugestao));
+}
+// FIM FUNÇÃO: teclaNaEquipe
+
+// INÍCIO FUNÇÃO: registrarOcorrencia
+function registrarOcorrencia() {
+  if (!estado.plantao) { mostrarAviso('Escolha o plantão primeiro.', 'erro'); return; }
+  const campoNum = document.getElementById('numero');
+  const campoEq = document.getElementById('equipe');
+  const digitos = campoNum.value;
+
+  if (digitos.length !== 9) { mostrarAviso('O número precisa ter 9 dígitos depois de ' + PREFIXO + '.', 'erro'); campoNum.focus(); return; }
+  let nome = normalizarNomeEquipe(campoEq.value);
+  const chave = chaveEquipe(nome);
+  if (!chave) { mostrarAviso('Informe a equipe.', 'erro'); campoEq.focus(); return; }
+  if (!areaSelecionada) { mostrarAviso('Escolha a área.', 'erro'); return; }
+
+  // Usa o nome já salvo, para não criar equipe repetida
+  if (estado.equipes && estado.equipes[chave]) nome = estado.equipes[chave].nome;
+
+  const numero = PREFIXO + digitos;
+  const repetida = listaOcorrencias().find(o => o.num === numero);
+  if (repetida) {
+    mostrarAviso('Número já registrado: ' + repetida.equipe + ' às ' + formatarHora(repetida.ts) + '.', 'erro');
+    return;
+  }
+
+  const alteracoes = {};
+  alteracoes['ocorrencias/' + gerarId()] = { num: numero, equipe: nome, area: areaSelecionada, ts: Date.now() };
+  alteracoes['equipes/' + chave] = { nome: nome, area: areaSelecionada };
+  aplicarAlteracoes(alteracoes);
+
+  mostrarAviso('Registrada: ' + numero + ' — ' + nome, 'ok');
+  campoNum.value = ''; campoEq.value = '';
+  selecionarArea(null);
+  tratarDigitacaoNumero();
+  campoNum.focus();
+}
+// FIM FUNÇÃO: registrarOcorrencia
+
+// INÍCIO FUNÇÃO: excluirOcorrencia
+function excluirOcorrencia(id) {
+  const o = (estado.ocorrencias || {})[id];
+  if (!o) return;
+  if (!confirm('Excluir a ocorrência ' + o.num + ' (' + o.equipe + ')?')) return;
+  const alt = {}; alt['ocorrencias/' + id] = null;
+  aplicarAlteracoes(alt);
+  mostrarAviso('Ocorrência excluída.', 'info');
+}
+// FIM FUNÇÃO: excluirOcorrencia
+
+// INÍCIO FUNÇÃO: excluirEquipe
+function excluirEquipe(chave) {
+  const e = (estado.equipes || {})[chave];
+  if (!e) return;
+  if (!confirm('Excluir a equipe ' + e.nome + ' da lista de sugestões?')) return;
+  const alt = {}; alt['equipes/' + chave] = null;
+  aplicarAlteracoes(alt);
+}
+// FIM FUNÇÃO: excluirEquipe
+
+// ===================== CONSULTA =====================
+
+// INÍCIO FUNÇÃO: ocorrenciasFiltradas
+function ocorrenciasFiltradas() {
+  const chave = chaveEquipe(document.getElementById('filtroEquipe').value);
+  return listaOcorrencias().filter(o =>
+    (filtroArea === 'TODAS' || o.area === filtroArea) &&
+    (!chave || chaveEquipe(o.equipe).includes(chave)));
+}
+// FIM FUNÇÃO: ocorrenciasFiltradas
+
+// INÍCIO FUNÇÃO: montarTextoResumo
+// Texto pronto para colar no relatório, separado por área
+function montarTextoResumo(lista) {
+  const sup = estado.plantao ? estado.plantao.sup : '';
+  const data = estado.plantao ? formatarData(estado.plantao.inicio) : formatarData(Date.now());
+  let txt = 'OCORRÊNCIAS — PLANTÃO ' + sup + ' (' + data + ')\nTotal: ' + lista.length + '\n';
+  AREAS.forEach(a => {
+    const daArea = lista.filter(o => o.area === a);
+    if (!daArea.length) return;
+    txt += '\n' + a + ' (' + daArea.length + ')\n';
+    daArea.forEach(o => { txt += o.num + ' — ' + o.equipe + ' — ' + formatarHora(o.ts) + '\n'; });
+  });
+  return txt.trim();
+}
+// FIM FUNÇÃO: montarTextoResumo
+
+// ===================== CÂMERAS (controle permanente, formato da planilha) =====================
+// Cada equipe guarda: equipe, qmd, área (opcional) e a lista de pontos (PTR / PB),
+// e cada ponto tem: código, vias, câmeras TIXXI, câmeras DC3, plena visualização e vias sem câmeras.
+let camTemp = [];                 // pontos que estão no formulário agora
+let camAreaSel = null;            // área escolhida no formulário (opcional)
+let camFiltroArea = 'TODAS';
+let camChaveCarregada = null;     // equipe que está aberta no formulário (evita recarregar à toa)
+const PLENA = { SIM: 'SIM', PARCIAL: 'PARCIAL', NAO: 'NÃO' };
+const TITULO_CAM = 'CONTROLE DE CÂMERAS DISPONÍVEIS - ÁREAS DE ATUAÇÃO DA FORÇA MUNICIPAL';
+
+// INÍCIO FUNÇÃO: camTextoComQuebras
+// Escapa o texto e mantém as quebras de linha na tabela
+function camTextoComQuebras(t) { return escaparHtml(t || '').replace(/\n/g, '<br>'); }
+// FIM FUNÇÃO: camTextoComQuebras
+
+// INÍCIO FUNÇÃO: camPlenaHtml
+function camPlenaHtml(v) {
+  return PLENA[v] ? '<span class="pv ' + v + '">' + PLENA[v] + '</span>' : '<span class="pv PEND">não verificado</span>';
+}
+// FIM FUNÇÃO: camPlenaHtml
+
+// INÍCIO FUNÇÃO: camEquipesValidas
+// Lista de equipes salvas (ignora registros antigos de teste do formato anterior)
+function camEquipesValidas() {
+  return Object.keys(estado.cameras || {})
+    .map(k => Object.assign({ chave: k }, estado.cameras[k]))
+    .filter(q => q && q.equipe && Array.isArray(q.pontos));
+}
+// FIM FUNÇÃO: camEquipesValidas
+
+// INÍCIO FUNÇÃO: camerasFormHtml
+// Cartões de pontos dentro do formulário (cada campo edita camTemp na hora)
+function camerasFormHtml() {
+  if (!camTemp.length) return `<div class="muted">Nenhum ponto. Use "ADICIONAR PTR" ou "ADICIONAR PB".</div>`;
+  return camTemp.map((p, i) => `<div class="ponto">
+  <div class="linha1"><input type="text" value="${escaparHtml(p.cod)}" placeholder="PTR_01" oninput="camTemp[${i}].cod=this.value">
+    <span class="dica">Código do ponto</span>
+    <button type="button" class="btn danger peq" style="margin-left:auto" onclick="camDel(${i})">🗑 Remover ponto</button></div>
+  <div class="grade">
+    <div><label>ATUAÇÃO / VIAS</label><textarea placeholder="Ruas do percurso ou endereço do ponto" oninput="camTemp[${i}].vias=this.value">${escaparHtml(p.vias)}</textarea></div>
+    <div><label>CÂMERAS TIXXI</label><textarea placeholder="Nº das câmeras" oninput="camTemp[${i}].tixxi=this.value">${escaparHtml(p.tixxi)}</textarea></div>
+    <div><label>CÂMERAS DC3</label><textarea placeholder="Nº das câmeras" oninput="camTemp[${i}].dc3=this.value">${escaparHtml(p.dc3)}</textarea></div>
+    <div><label>POSSUI PLENA VISUALIZAÇÃO DA EQUIPE?</label><select onchange="camTemp[${i}].plena=this.value">
+      <option value="" ${!PLENA[p.plena] ? 'selected' : ''}>— não verificado —</option>
+      ${Object.keys(PLENA).map(k => `<option value="${k}" ${p.plena === k ? 'selected' : ''}>${PLENA[k]}</option>`).join('')}</select></div>
+    <div><label>VIAS SEM CÂMERAS</label><textarea placeholder="Trechos sem cobertura" oninput="camTemp[${i}].semCam=this.value">${escaparHtml(p.semCam)}</textarea></div>
+  </div></div>`).join('');
+}
+// FIM FUNÇÃO: camerasFormHtml
+
+// INÍCIO FUNÇÃO: camRedesenharForm
+function camRedesenharForm() { document.getElementById('cam-box').innerHTML = camerasFormHtml(); }
+// FIM FUNÇÃO: camRedesenharForm
+
+// INÍCIO FUNÇÃO: camProximoCodigo
+// Sugere o próximo número: PTR_01, PTR_02... / PB_01, PB_02...
+function camProximoCodigo(tipo) {
+  let maior = 0;
+  camTemp.forEach(p => {
+    const m = (p.cod || '').toUpperCase().match(/^(PTR|PB)\s*_?\s*(\d+)/);
+    if (m && m[1] === tipo) maior = Math.max(maior, parseInt(m[2], 10));
+  });
+  return tipo + '_' + String(maior + 1).padStart(2, '0');
+}
+// FIM FUNÇÃO: camProximoCodigo
+
+// INÍCIO FUNÇÃO: camAdd
+function camAdd(tipo) {
+  const novo = { cod: camProximoCodigo(tipo), vias: '', tixxi: '', dc3: '', plena: '', semCam: '' };
+  if (tipo === 'PTR') {           // PTR fica antes dos PB, como na planilha
+    let pos = 0;
+    camTemp.forEach((p, i) => { if (/^PTR/i.test(p.cod || '')) pos = i + 1; });
+    camTemp.splice(pos, 0, novo);
+  } else camTemp.push(novo);
+  camRedesenharForm();
+}
+// FIM FUNÇÃO: camAdd
+
+// INÍCIO FUNÇÃO: camDel
+function camDel(i) {
+  const p = camTemp[i];
+  if ((p.vias || p.tixxi || p.dc3 || p.semCam) && !confirm('Remover o ponto ' + (p.cod || '') + '?')) return;
+  camTemp.splice(i, 1); camRedesenharForm();
+}
+// FIM FUNÇÃO: camDel
+
+// INÍCIO FUNÇÃO: camSelecionarArea
+function camSelecionarArea(area) {
+  camAreaSel = (camAreaSel === area) ? null : area;   // clicar de novo desmarca (é opcional)
+  document.querySelectorAll('#areasCam button').forEach(b => b.classList.toggle('sel', b.dataset.area === camAreaSel));
+}
+// FIM FUNÇÃO: camSelecionarArea
+
+// INÍCIO FUNÇÃO: camCarregarEquipe
+// Se a equipe digitada já existe, carrega QMD, área e pontos para editar
+function camCarregarEquipe() {
+  const chave = chaveEquipe(document.getElementById('camEquipe').value);
+  const aviso = document.getElementById('camAvisoEdicao');
+  if (chave === camChaveCarregada) return;          // já está aberta: não apaga o que está sendo digitado
+  const q = chave ? (estado.cameras || {})[chave] : null;
+  if (!q || !Array.isArray(q.pontos)) { aviso.style.display = 'none'; camChaveCarregada = null; return; }
+  camChaveCarregada = chave;
+  document.getElementById('camEquipe').value = q.equipe;
+  document.getElementById('camQmd').value = q.qmd || '';
+  camAreaSel = null; camSelecionarArea(q.area || null);
+  camTemp = JSON.parse(JSON.stringify(q.pontos));
+  camRedesenharForm();
+  aviso.innerHTML = '✏ Editando equipe já cadastrada — última atualização por <b>' + escaparHtml(q.por || '?') +
+    '</b> em ' + formatarData(q.ts) + ' às ' + formatarHora(q.ts) + '.';
+  aviso.style.display = 'block';
+}
+// FIM FUNÇÃO: camCarregarEquipe
+
+// INÍCIO FUNÇÃO: camLimparForm
+function camLimparForm() {
+  document.getElementById('camEquipe').value = '';
+  document.getElementById('camQmd').value = '';
+  document.getElementById('camAvisoEdicao').style.display = 'none';
+  camChaveCarregada = null;
+  camAreaSel = null; camSelecionarArea(null);
+  camTemp = [];
+  camAdd('PTR');
+}
+// FIM FUNÇÃO: camLimparForm
+
+// INÍCIO FUNÇÃO: camLimparPonto
+function camLimparPonto(p) {
+  const m = (p.cod || '').toUpperCase().match(/^(PTR|PB)\s*_?\s*(\d+)/);
+  return {
+    cod: m ? m[1] + '_' + m[2].padStart(2, '0') : normalizarNomeEquipe(p.cod),
+    vias: (p.vias || '').trim(), tixxi: (p.tixxi || '').trim(), dc3: (p.dc3 || '').trim(),
+    plena: PLENA[p.plena] ? p.plena : '', semCam: (p.semCam || '').trim()
+  };
+}
+// FIM FUNÇÃO: camLimparPonto
+
+// INÍCIO FUNÇÃO: camSalvar
+function camSalvar() {
+  if (!estado.plantao) { mostrarAviso('Escolha o plantão primeiro.', 'erro'); return; }
+  let equipe = normalizarNomeEquipe(document.getElementById('camEquipe').value);
+  const chave = chaveEquipe(equipe);
+  if (!chave) { mostrarAviso('Informe a equipe.', 'erro'); document.getElementById('camEquipe').focus(); return; }
+  const qmd = document.getElementById('camQmd').value.trim();
+  const pontos = camTemp.map(camLimparPonto).filter(p => p.cod || p.vias || p.tixxi || p.dc3 || p.semCam);
+  if (!pontos.length) { mostrarAviso('Adicione pelo menos um ponto (PTR ou PB).', 'erro'); return; }
+  const cods = {};
+  for (const p of pontos) {
+    if (p.cod && cods[p.cod]) { mostrarAviso('Código repetido nesta equipe: ' + p.cod, 'erro'); return; }
+    cods[p.cod] = true;
+  }
+  const existente = (estado.cameras || {})[chave];
+  if (existente && existente.equipe) equipe = existente.equipe;
+  const alt = {};
+  alt['cameras/' + chave] = { equipe: equipe, qmd: qmd, area: camAreaSel || '', pontos: pontos, por: estado.plantao.sup, ts: Date.now() };
+  aplicarAlteracoes(alt);
+  mostrarAviso('Equipe ' + equipe + ' salva (' + pontos.length + ' pontos).', 'ok');
+  camLimparForm();
+  document.getElementById('camEquipe').focus();
+}
+// FIM FUNÇÃO: camSalvar
+
+// INÍCIO FUNÇÃO: camEditar
+function camEditar(chave) {
+  const q = (estado.cameras || {})[chave];
+  if (!q) return;
+  document.getElementById('camEquipe').value = q.equipe;
+  camChaveCarregada = null;
+  camCarregarEquipe();
+  document.getElementById('abaCameras').scrollIntoView({ behavior: 'smooth' });
+}
+// FIM FUNÇÃO: camEditar
+
+// INÍCIO FUNÇÃO: camExcluirQmd
+function camExcluirQmd(chave) {
+  const q = (estado.cameras || {})[chave];
+  if (!q) return;
+  if (!confirm('Excluir a equipe ' + (q.equipe || q.qmd || chave) + ' do controle de câmeras?\nIsso apaga para TODOS os plantões.')) return;
+  const alt = {}; alt['cameras/' + chave] = null;
+  aplicarAlteracoes(alt);
+  mostrarAviso('Equipe excluída do controle.', 'info');
+}
+// FIM FUNÇÃO: camExcluirQmd
+
+// INÍCIO FUNÇÃO: camLerTabela
+// Lê o texto copiado da planilha (colunas separadas por TAB; células com quebra de linha vêm entre aspas)
+function camLerTabela(texto) {
+  const sep = texto.indexOf('\t') >= 0 ? '\t' : (texto.indexOf(';') >= 0 ? ';' : ',');
+  const linhas = []; let linha = []; let cel = ''; let aspas = false;
+  for (let i = 0; i < texto.length; i++) {
+    const c = texto[i];
+    if (aspas) {
+      if (c === '"') { if (texto[i + 1] === '"') { cel += '"'; i++; } else aspas = false; }
+      else cel += c;
+    } else if (c === '"' && cel === '') aspas = true;
+    else if (c === sep) { linha.push(cel); cel = ''; }
+    else if (c === '\n' || c === '\r') {
+      if (c === '\r' && texto[i + 1] === '\n') i++;
+      linha.push(cel); linhas.push(linha); linha = []; cel = '';
+    } else cel += c;
+  }
+  if (cel !== '' || linha.length) { linha.push(cel); linhas.push(linha); }
+  return linhas;
+}
+// FIM FUNÇÃO: camLerTabela
+
+// INÍCIO FUNÇÃO: camImportar
+// Importa equipes, QMDs e pontos colados da planilha do Drive
+function camImportar() {
+  if (!estado.plantao) { mostrarAviso('Escolha o plantão primeiro.', 'erro'); return; }
+  const linhas = camLerTabela(document.getElementById('txtImportar').value || '');
+  const lerPlena = t => { t = (t || '').toUpperCase(); return t.includes('PARC') ? 'PARCIAL' : (t.includes('NÃO') || t.includes('NAO')) ? 'NAO' : t.includes('SIM') ? 'SIM' : ''; };
+  const grupos = {}; const ordem = [];
+  let equipeAtual = '', qmdAtual = '';
+  linhas.forEach(l => {
+    const c = l.map(x => (x || '').trim());
+    if (c.join('').toUpperCase().includes('ATUAÇÃO') || c.join('').toUpperCase().includes('CONTROLE DE CÂMERAS')) return; // cabeçalho/título
+    if (c.length < 3) return;
+    if (c[0]) equipeAtual = normalizarNomeEquipe(c[0]);
+    if (c[1]) qmdAtual = c[1];
+    if (!equipeAtual || !(c[2] || c[3] || c[4] || c[6])) return;
+    const m = c[2].match(/^(PTR|PB)\s*_?\s*(\d+)\s*[-–:]?\s*/i);
+    const ponto = {
+      cod: m ? m[1].toUpperCase() + '_' + m[2].padStart(2, '0') : '',
+      vias: m ? c[2].slice(m[0].length).trim() : c[2],
+      tixxi: c[3] || '', dc3: c[4] || '', plena: lerPlena(c[5]), semCam: c[6] || ''
+    };
+    const k = chaveEquipe(equipeAtual);
+    if (!grupos[k]) { grupos[k] = { equipe: equipeAtual, qmd: qmdAtual, pontos: [] }; ordem.push(k); }
+    grupos[k].pontos.push(ponto);
+  });
+  if (!ordem.length) { mostrarAviso('Não encontrei linhas válidas. Copie a partir da coluna EQUIPE.', 'erro'); return; }
+  const totalPontos = ordem.reduce((n, k) => n + grupos[k].pontos.length, 0);
+  const jaExistem = ordem.filter(k => (estado.cameras || {})[k] && Array.isArray(estado.cameras[k].pontos)).length;
+  if (!confirm('Importar ' + ordem.length + ' equipe(s) e ' + totalPontos + ' ponto(s)?' +
+      (jaExistem ? '\n\n' + jaExistem + ' equipe(s) já existem no app: as vias serão atualizadas e as câmeras já preenchidas no app serão mantidas.' : ''))) return;
+
+  const alt = {};
+  ordem.forEach(k => {
+    const g = grupos[k];
+    const antigo = (estado.cameras || {})[k];
+    const antigos = {};
+    if (antigo && Array.isArray(antigo.pontos)) antigo.pontos.forEach(p => { if (p.cod) antigos[p.cod] = p; });
+    const pontos = g.pontos.map(p => {
+      const a = antigos[p.cod];
+      if (!a) return p;
+      return { cod: p.cod, vias: p.vias || a.vias || '', tixxi: p.tixxi || a.tixxi || '', dc3: p.dc3 || a.dc3 || '',
+               plena: p.plena || a.plena || '', semCam: p.semCam || a.semCam || '' };
+    });
+    // Pontos que existem só no app (criados pelos operadores) são mantidos
+    const importados = {}; g.pontos.forEach(p => { if (p.cod) importados[p.cod] = true; });
+    if (antigo && Array.isArray(antigo.pontos)) antigo.pontos.forEach(p => { if (p.cod && !importados[p.cod]) pontos.push(p); });
+    alt['cameras/' + k] = { equipe: (antigo && antigo.equipe) || g.equipe, qmd: g.qmd || (antigo && antigo.qmd) || '',
+      area: (antigo && antigo.area) || '', pontos: pontos, por: estado.plantao.sup + ' (importação)', ts: Date.now() };
+  });
+  aplicarAlteracoes(alt);
+  document.getElementById('txtImportar').value = '';
+  mostrarAviso(ordem.length + ' equipe(s) importada(s) com ' + totalPontos + ' pontos.', 'ok');
+}
+// FIM FUNÇÃO: camImportar
+
+// INÍCIO FUNÇÃO: camFiltrados
+// Devolve as equipes (com só os pontos que batem com os filtros), em ordem de equipe
+function camFiltrados() {
+  const vis = document.getElementById('camFiltroVis').value;
+  const busca = (document.getElementById('camBusca').value || '').toUpperCase().trim();
+  return camEquipesValidas()
+    .filter(q => camFiltroArea === 'TODAS' || q.area === camFiltroArea)
+    .map(q => {
+      const cabBate = busca && ((q.equipe || '') + ' ' + (q.qmd || '')).toUpperCase().includes(busca);
+      const pontos = q.pontos.filter(p =>
+        (vis === 'TODAS' || (vis === 'PEND' ? !PLENA[p.plena] : p.plena === vis)) &&
+        (!busca || cabBate || [p.cod, p.vias, p.tixxi, p.dc3, p.semCam].join(' ').toUpperCase().includes(busca)));
+      return Object.assign({}, q, { pontosFiltrados: pontos });
+    })
+    .filter(q => q.pontosFiltrados.length)
+    .sort((a, b) => a.equipe.localeCompare(b.equipe, 'pt-BR', { numeric: true }));
+}
+// FIM FUNÇÃO: camFiltrados
+
+// INÍCIO FUNÇÃO: camTabelaHtml
+// Monta a tabela no mesmo formato da planilha (usada na tela e no PDF)
+function camTabelaHtml(lista, comAcoes) {
+  // Larguras das colunas (iguais às proporções da planilha)
+  const larg = comAcoes ? [7, 5, 33, 10, 10, 11, 14, 10] : [7, 5, 36, 11, 11, 11, 19];
+  let h = '<table class="tab-cam"><colgroup>' + larg.map(w => '<col style="width:' + w + '%">').join('') + '</colgroup>' +
+    '<tr class="titulo-geral"><th colspan="' + larg.length + '">' + TITULO_CAM + '</th></tr>' +
+    '<tr class="cab"><th>EQUIPE</th><th>QMD</th><th>ATUAÇÃO / VIAS</th>' +
+    '<th>CÂMERAS TIXXI</th><th>CÂMERAS DC3</th><th>POSSUI PLENA VISUALIZAÇÃO DA EQUIPE?</th>' +
+    '<th>VIAS SEM CÂMERAS</th>' + (comAcoes ? '<th></th>' : '') + '</tr>';
+  lista.forEach(q => {
+    const n = q.pontosFiltrados.length;
+    q.pontosFiltrados.forEach((p, i) => {
+      h += '<tr>';
+      if (i === 0) {
+        h += '<td class="eq" rowspan="' + n + '">' + escaparHtml(q.equipe) + (q.area ? '<div style="font-weight:normal;font-size:11px;color:#555">' + escaparHtml(q.area) + '</div>' : '') + '</td>' +
+             '<td class="qmd" rowspan="' + n + '">' + escaparHtml(q.qmd) + '</td>';
+      }
+      h += '<td><b>' + escaparHtml(p.cod) + '</b> ' + camTextoComQuebras(p.vias) + '</td>' +
+           '<td>' + camTextoComQuebras(p.tixxi) + '</td><td>' + camTextoComQuebras(p.dc3) + '</td>' +
+           '<td style="text-align:center">' + camPlenaHtml(p.plena) + '</td><td>' + camTextoComQuebras(p.semCam) + '</td>';
+      if (comAcoes && i === 0) {
+        h += '<td class="acoes" rowspan="' + n + '"><div class="quem">' + escaparHtml(q.por || '?') + '<br>' + formatarData(q.ts) + ' ' + formatarHora(q.ts) + '</div>' +
+             '<button class="btn peq" data-acao="camEditar" data-chave="' + escaparHtml(q.chave) + '">✏ Editar</button><br><br>' +
+             '<button class="btn verm peq" data-acao="camExcluir" data-chave="' + escaparHtml(q.chave) + '">Excluir</button></td>';
+      }
+      h += '</tr>';
+    });
+  });
+  return h + '</table>';
+}
+// FIM FUNÇÃO: camTabelaHtml
+
+// INÍCIO FUNÇÃO: camTextoLista
+function camTextoLista(lista) {
+  let txt = TITULO_CAM + '\n' + formatarData(Date.now()) + '\n';
+  lista.forEach(q => {
+    txt += '\n' + q.equipe + ' — QMD ' + (q.qmd || '-') + '\n';
+    q.pontosFiltrados.forEach(p => {
+      txt += '• ' + (p.cod || '') + ' | TIXXI: ' + (p.tixxi || '-').replace(/\n/g, ', ') + ' | DC3: ' + (p.dc3 || '-').replace(/\n/g, ', ') +
+             ' | Plena: ' + (PLENA[p.plena] || 'não verificado') + (p.semCam ? ' | Sem câmeras: ' + p.semCam.replace(/\n/g, ', ') : '') + '\n';
+    });
+  });
+  return txt.trim();
+}
+// FIM FUNÇÃO: camTextoLista
+
+// INÍCIO FUNÇÃO: camBaixarCsv
+// Gera uma planilha (CSV) com as mesmas colunas da tabela; abre direto no Excel
+function camBaixarCsv() {
+  const lista = camFiltrados();
+  if (!lista.length) { mostrarAviso('Nada para exportar.', 'erro'); return; }
+  const cel = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+  const linhas = [[TITULO_CAM].map(cel).join(';'),
+    ['EQUIPE', 'QMD', 'ATUAÇÃO / VIAS', 'CÂMERAS TIXXI', 'CÂMERAS DC3', 'POSSUI PLENA VIZUALIZAÇÃO DA EQUIPE?', 'VIAS SEM CÂMERAS', 'ATUALIZADO POR', 'DATA'].map(cel).join(';')];
+  lista.forEach(q => q.pontosFiltrados.forEach(p => linhas.push([
+    q.equipe, q.qmd, ((p.cod || '') + ' ' + (p.vias || '')).trim(), p.tixxi, p.dc3, PLENA[p.plena] || '', p.semCam, q.por,
+    formatarData(q.ts) + ' ' + formatarHora(q.ts)].map(cel).join(';'))));
+  const blob = new Blob(['﻿' + linhas.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'controle_cameras_' + new Date().toISOString().slice(0, 10) + '.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  mostrarAviso('Planilha baixada (abre no Excel).', 'ok');
+}
+// FIM FUNÇÃO: camBaixarCsv
+
+// INÍCIO FUNÇÃO: camGerarPdf
+// Abre a tabela em página branca, deitada (paisagem), e chama "Imprimir / Salvar como PDF"
+function camGerarPdf() {
+  const lista = camFiltrados();
+  if (!lista.length) { mostrarAviso('Nada para gerar no PDF.', 'erro'); return; }
+  const agora = Date.now();
+  const vis = document.getElementById('camFiltroVis');
+  const busca = document.getElementById('camBusca').value.trim();
+  const filtros = [camFiltroArea === 'TODAS' ? 'Todas as áreas' : 'Área: ' + camFiltroArea, vis.options[vis.selectedIndex].text]
+    .concat(busca ? ['Busca: "' + busca + '"'] : []).join(' · ');
+  const html = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Controle de Câmeras ' + formatarData(agora).replace(/\//g, '-') + '</title><style>' +
+    '@page{size:A4 landscape;margin:10mm}body{font-family:Arial,sans-serif;color:#111;margin:0;font-size:10px}' +
+    '.meta{color:#555;margin-bottom:6px;font-size:10px}' +
+    '.tab-cam{width:100%;border-collapse:collapse;table-layout:fixed}.tab-cam tr{page-break-inside:avoid}' +
+    '.tab-cam .titulo-geral th{background:#3d3d3d;color:#fff;font-size:13px;padding:6px;text-align:center}' +
+    '.tab-cam .cab th{background:#FFC000;color:#111;font-weight:800;text-align:center;border:1px solid #9a7a00;font-size:9px;padding:5px 4px}' +
+    '.tab-cam td{border:1px solid #999;vertical-align:top;padding:3px 4px;word-wrap:break-word}' +
+    '.tab-cam td.eq{background:#e9e9e9;font-weight:800;text-align:center;vertical-align:middle}.tab-cam td.qmd{text-align:center;vertical-align:middle}' +
+    '.pv{font-weight:800}.pv.SIM{color:#1f6f43}.pv.PARCIAL{color:#a86a0c}.pv.NAO{color:#b3261e}.pv.PEND{color:#999;font-weight:normal;font-style:italic}' +
+    '*{-webkit-print-color-adjust:exact;print-color-adjust:exact}' +
+    '.dica{background:#fff6d6;border:1px solid #e0c060;padding:8px;border-radius:6px;margin-bottom:8px;font-size:12px}@media print{.dica{display:none}}' +
+    '</style></head><body>' +
+    '<div class="dica">Na janela de impressão, em <b>Destino</b>, escolha <b>"Salvar como PDF"</b>. Se as cores não aparecerem, marque <b>"Gráficos de plano de fundo"</b> em "Mais configurações".</div>' +
+    '<div class="meta">Gerado em ' + formatarData(agora) + ' às ' + formatarHora(agora) + (estado.plantao ? ' · Plantão ' + escaparHtml(estado.plantao.sup) : '') +
+    ' · Filtros: ' + escaparHtml(filtros) + '</div>' + camTabelaHtml(lista, false) +
+    '<script>window.onload=function(){setTimeout(function(){window.print()},300)}<\/script></body></html>';
+  const janela = window.open('', '_blank');
+  if (!janela) { mostrarAviso('O navegador bloqueou a janela do PDF. Permita pop-ups para este arquivo.', 'erro'); return; }
+  janela.document.open(); janela.document.write(html); janela.document.close();
+}
+// FIM FUNÇÃO: camGerarPdf
+
+// INÍCIO FUNÇÃO: renderizarCameras
+// Atualiza só a listagem (o formulário não é redesenhado, para não atrapalhar quem está digitando)
+function renderizarCameras() {
+  const todos = camEquipesValidas();
+  const pts = todos.flatMap(q => q.pontos);
+  document.getElementById('camResumo').innerHTML =
+    '<div><b>' + todos.length + '</b>EQUIPES</div>' +
+    '<div><b>' + pts.length + '</b>PONTOS</div>' +
+    '<div><b style="color:#7ee2a8">' + pts.filter(p => p.plena === 'SIM').length + '</b>PLENA: SIM</div>' +
+    '<div><b style="color:#f2c27a">' + pts.filter(p => p.plena === 'PARCIAL').length + '</b>PARCIAL</div>' +
+    '<div><b style="color:#ff9b9b">' + pts.filter(p => p.plena === 'NAO').length + '</b>NÃO</div>' +
+    '<div><b>' + pts.filter(p => !PLENA[p.plena]).length + '</b>NÃO VERIFICADOS</div>';
+
+  document.getElementById('chipsCamArea').innerHTML = ['TODAS'].concat(AREAS).map(a =>
+    '<button data-acao="camFiltroArea" data-area="' + a + '" class="' + (camFiltroArea === a ? 'sel' : '') + '">' + a + '</button>').join('');
+
+  document.getElementById('listaCamEquipes').innerHTML =
+    todos.map(q => '<option value="' + escaparHtml(q.equipe) + '">').join('');
+
+  const lista = camFiltrados();
+  const alvo = document.getElementById('camLista');
+  if (!lista.length) {
+    alvo.innerHTML = '<div class="vazio">' + (todos.length ? 'Nenhum ponto para este filtro.' :
+      'Nenhuma equipe cadastrada. Preencha o formulário acima ou use "IMPORTAR DA PLANILHA DO DRIVE".') + '</div>';
+    return;
+  }
+  alvo.innerHTML = camTabelaHtml(lista, true);
+}
+// FIM FUNÇÃO: renderizarCameras
+
+// ===================== TELA (RENDERIZAÇÃO) =====================
+
+// INÍCIO FUNÇÃO: renderizarCabecalho
+function renderizarCabecalho() {
+  document.getElementById('seloPlantao').textContent = estado.plantao ? 'PLANTÃO ' + estado.plantao.sup : 'SEM PLANTÃO';
+  document.getElementById('btnEncerrar').style.display = estado.plantao ? 'inline-block' : 'none';
+  const selo = document.getElementById('seloModo');
+  if (modo === 'nuvem') {
+    selo.textContent = conectado ? '☁ NUVEM CONECTADA' : '☁ NUVEM SEM CONEXÃO';
+    selo.className = 'selo ' + (conectado ? 'on' : 'off');
+  } else {
+    selo.textContent = '💻 SÓ ESTE COMPUTADOR';
+    selo.className = 'selo';
+  }
+  if (carregando) {
+    selo.textContent = '☁ CONECTANDO...';
+    selo.className = 'selo';
+  }
+  document.getElementById('telaCarregando').style.display = carregando ? 'block' : 'none';
+  document.getElementById('telaPlantao').style.display = (!carregando && !estado.plantao) ? 'block' : 'none';
+  document.getElementById('areaTrabalho').style.display = (!carregando && estado.plantao) ? 'block' : 'none';
+}
+// FIM FUNÇÃO: renderizarCabecalho
+
+// INÍCIO FUNÇÃO: renderizarRecentes
+function renderizarRecentes() {
+  const lista = listaOcorrencias().reverse().slice(0, 10);
+  const alvo = document.getElementById('listaRecentes');
+  if (!lista.length) { alvo.innerHTML = '<div class="vazio">Nenhuma ocorrência registrada ainda.</div>'; return; }
+  alvo.innerHTML = '<table><tr><th>HORA</th><th>NÚMERO</th><th>EQUIPE</th><th>ÁREA</th><th></th></tr>' +
+    lista.map(o => '<tr><td>' + formatarHora(o.ts) + '</td><td class="num">' + escaparHtml(o.num) + '</td><td>' +
+      escaparHtml(o.equipe) + '</td><td><span class="tag ' + escaparHtml(o.area) + '">' + escaparHtml(o.area) +
+      '</span></td><td><button class="btn verm peq" data-acao="excluir" data-id="' + escaparHtml(o.id) + '">Excluir</button></td></tr>').join('') +
+    '</table>';
+}
+// FIM FUNÇÃO: renderizarRecentes
+
+// INÍCIO FUNÇÃO: renderizarConsulta
+function renderizarConsulta() {
+  const todas = listaOcorrencias();
+  document.getElementById('resumo').innerHTML =
+    '<div><b>' + todas.length + '</b>TOTAL</div>' +
+    AREAS.map(a => '<div><b>' + todas.filter(o => o.area === a).length + '</b>' + a + '</div>').join('') +
+    '<div><b>' + new Set(todas.map(o => o.equipe)).size + '</b>EQUIPES</div>';
+
+  document.getElementById('chipsArea').innerHTML = ['TODAS'].concat(AREAS).map(a =>
+    '<button data-acao="filtroArea" data-area="' + a + '" class="' + (filtroArea === a ? 'sel' : '') + '">' + a + '</button>').join('');
+
+  const lista = ocorrenciasFiltradas();
+  const alvo = document.getElementById('tabelaConsulta');
+  if (!lista.length) { alvo.innerHTML = '<div class="vazio">Nenhuma ocorrência para este filtro.</div>'; return; }
+  alvo.innerHTML = '<table><tr><th>HORA</th><th>NÚMERO</th><th>EQUIPE</th><th>ÁREA</th><th></th></tr>' +
+    lista.map(o => '<tr><td>' + formatarHora(o.ts) + '</td><td class="num">' + escaparHtml(o.num) + '</td><td>' +
+      escaparHtml(o.equipe) + '</td><td><span class="tag ' + escaparHtml(o.area) + '">' + escaparHtml(o.area) +
+      '</span></td><td><button class="btn peq" data-acao="copiarNum" data-num="' + escaparHtml(o.num) + '">📋 Copiar nº</button></td></tr>').join('') +
+    '</table>';
+}
+// FIM FUNÇÃO: renderizarConsulta
+
+// INÍCIO FUNÇÃO: renderizarConfig
+function renderizarConfig() {
+  const chaves = Object.keys(estado.equipes || {}).sort((a, b) => estado.equipes[a].nome.localeCompare(estado.equipes[b].nome));
+  const alvo = document.getElementById('listaEquipes');
+  alvo.innerHTML = !chaves.length ? '<div class="vazio">Nenhuma equipe salva ainda.</div>' :
+    '<table><tr><th>EQUIPE</th><th>ÚLTIMA ÁREA</th><th></th></tr>' +
+    chaves.map(k => '<tr><td><b>' + escaparHtml(estado.equipes[k].nome) + '</b></td><td><span class="tag ' +
+      escaparHtml(estado.equipes[k].area) + '">' + escaparHtml(estado.equipes[k].area) + '</span></td><td>' +
+      '<button class="btn verm peq" data-acao="excluirEquipe" data-chave="' + escaparHtml(k) + '">Excluir</button></td></tr>').join('') +
+    '</table>';
+
+  document.getElementById('formNuvem').style.display = modo === 'nuvem' ? 'none' : 'block';
+  document.getElementById('infoNuvem').style.display = modo === 'nuvem' ? 'block' : 'none';
+  if (modo === 'nuvem') document.getElementById('txtNuvem').innerHTML =
+    'Conectado à sala <b>' + escaparHtml(sala) + '</b>. Quem abrir o app com o mesmo firebaseConfig e o mesmo código vê os registros em tempo real.';
+}
+// FIM FUNÇÃO: renderizarConfig
+
+// INÍCIO FUNÇÃO: renderizarTudo
+function renderizarTudo() {
+  renderizarCabecalho();
+  renderizarRecentes();
+  renderizarConsulta();
+  renderizarConfig();
+  renderizarCameras();
+}
+// FIM FUNÇÃO: renderizarTudo
+
+// INÍCIO FUNÇÃO: trocarAba
+function trocarAba(id) {
+  abaAtual = id;
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('ativa', b.dataset.aba === id));
+  document.querySelectorAll('section').forEach(s => s.classList.toggle('ativa', s.id === id));
+  if (id === 'abaRegistrar') document.getElementById('numero').focus();
+}
+// FIM FUNÇÃO: trocarAba
+
+// ===================== NUVEM (FIREBASE, OPCIONAL) =====================
+
+// INÍCIO FUNÇÃO: lerConfigFirebase
+// Lê o texto colado do Firebase e extrai apiKey, databaseURL etc.
+function lerConfigFirebase(texto) {
+  const cfg = {};
+  const re = /(\w+)\s*:\s*["']([^"']+)["']/g;
+  let m;
+  while ((m = re.exec(texto || '')) !== null) cfg[m[1]] = m[2];
+  return cfg;
+}
+// FIM FUNÇÃO: lerConfigFirebase
+
+// INÍCIO FUNÇÃO: carregarScript
+function carregarScript(url) {
+  return new Promise((ok, falha) => {
+    if (document.querySelector('script[src="' + url + '"]')) { ok(); return; }
+    const s = document.createElement('script');
+    s.src = url; s.onload = ok; s.onerror = () => falha(new Error('sem internet ou bloqueado'));
+    document.head.appendChild(s);
+  });
+}
+// FIM FUNÇÃO: carregarScript
+
+// INÍCIO FUNÇÃO: conectarNuvem
+async function conectarNuvem(textoCfg, codigo, silencioso) {
+  const cfg = lerConfigFirebase(textoCfg);
+  if (!cfg.apiKey || !cfg.databaseURL) {
+    mostrarAviso('Config incompleta: falta apiKey ou databaseURL (crie o Realtime Database e copie o config de novo).', 'erro');
+    return;
+  }
+  const codLimpo = (codigo || '').trim().toLowerCase().replace(/[.#$\[\]\/]/g, '_');
+  if (!codLimpo) { mostrarAviso('Informe o código da sala.', 'erro'); return; }
+  // Se a nuvem não responder em 12 segundos, explica o provável motivo
+  setTimeout(() => {
+    if (carregando) document.querySelector('#telaCarregando .dica').innerHTML =
+      'Está demorando. A internet pode estar lenta ou a rede bloqueando o Firebase.<br>Feche e abra o app de novo; se continuar, avise o responsável pelo sistema.';
+  }, 12000);
+  try {
+    await carregarScript('https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js');
+    await carregarScript('https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js');
+    if (firebase.apps.length) await firebase.app().delete();
+    firebase.initializeApp(cfg);
+    db = firebase.database();
+    sala = codLimpo;
+    modo = 'nuvem';
+    db.ref('.info/connected').on('value', s => { conectado = !!s.val(); renderizarCabecalho(); });
+    db.ref('salas/' + sala).on('value', s => {
+      const v = s.val() || {};
+      estado = { plantao: v.plantao || null, ocorrencias: v.ocorrencias || {}, equipes: v.equipes || {}, cameras: v.cameras || {} };
+      carregando = false;
+      renderizarTudo();
+    }, e => {
+      carregando = false;
+      renderizarTudo();
+      mostrarAviso('Sem permissão na nuvem: confira as regras do Realtime Database.', 'erro');
+    });
+    try {
+      localStorage.setItem(CHAVE_NUVEM, JSON.stringify({ cfg: textoCfg, sala: codigo }));
+      localStorage.removeItem(CHAVE_SEM_NUVEM);
+    } catch (e2) { /* navegador sem armazenamento: só não lembra a escolha */ }
+    if (!silencioso) mostrarAviso('Conectado à nuvem!', 'ok');
+  } catch (e) {
+    modo = 'local'; db = null; carregando = false;
+    estado = { plantao: null, ocorrencias: {}, equipes: {}, cameras: {} };
+    carregarLocal();
+    mostrarAviso('SEM INTERNET: os registros ficarão SÓ NESTE PC. Feche e abra o app quando a internet voltar.', 'erro');
+    renderizarTudo();
+  }
+}
+// FIM FUNÇÃO: conectarNuvem
+
+// INÍCIO FUNÇÃO: desconectarNuvem
+function desconectarNuvem() {
+  if (!confirm('Desconectar da nuvem? Este computador volta a usar só os dados locais.')) return;
+  if (db) { db.ref('salas/' + sala).off(); db.ref('.info/connected').off(); }
+  db = null; sala = null; modo = 'local'; conectado = false;
+  try {
+    localStorage.removeItem(CHAVE_NUVEM);
+    localStorage.setItem(CHAVE_SEM_NUVEM, '1');   // não reconectar sozinho na próxima abertura
+  } catch (e) { /* ignora */ }
+  estado = { plantao: null, ocorrencias: {}, equipes: {}, cameras: {} };
+  carregarLocal();
+  renderizarTudo();
+  mostrarAviso('Modo local ativado.', 'info');
+}
+// FIM FUNÇÃO: desconectarNuvem
+
+// ===================== INÍCIO DO APP =====================
+
+// INÍCIO FUNÇÃO: iniciarApp
+function iniciarApp() {
+  document.getElementById('prefixo').textContent = PREFIXO;
+
+  document.getElementById('gradePlantoes').innerHTML =
+    PLANTOES.map(p => '<button data-acao="plantao" data-nome="' + p + '">' + p + '</button>').join('');
+  document.getElementById('areasRegistro').innerHTML =
+    AREAS.map(a => '<button data-acao="area" data-area="' + a + '">' + a + '</button>').join('');
+
+  // Cliques em botões criados dinamicamente
+  document.addEventListener('click', ev => {
+    const alvo = ev.target.closest('[data-acao]');
+    if (!alvo) {
+      if (!ev.target.closest('.caixa-equipe')) document.getElementById('sugestoes').style.display = 'none';
+      return;
+    }
+    const d = alvo.dataset;
+    if (d.acao === 'plantao') iniciarPlantao(d.nome);
+    else if (d.acao === 'area') selecionarArea(d.area);
+    else if (d.acao === 'sugestao') escolherEquipe(d.nome);
+    else if (d.acao === 'excluir') excluirOcorrencia(d.id);
+    else if (d.acao === 'excluirEquipe') excluirEquipe(d.chave);
+    else if (d.acao === 'filtroArea') { filtroArea = d.area; renderizarConsulta(); }
+    else if (d.acao === 'copiarNum') copiarTexto(d.num, 'Número copiado: ' + d.num);
+    else if (d.acao === 'camArea') camSelecionarArea(d.area);
+    else if (d.acao === 'camFiltroArea') { camFiltroArea = d.area; renderizarCameras(); }
+    else if (d.acao === 'camEditar') camEditar(d.chave);
+    else if (d.acao === 'camExcluir') camExcluirQmd(d.chave);
+  });
+
+  // Aba Câmeras
+  document.getElementById('areasCam').innerHTML =
+    AREAS.map(a => '<button data-acao="camArea" data-area="' + a + '">' + a + '</button>').join('');
+  document.getElementById('camEquipe').addEventListener('change', camCarregarEquipe);
+  document.getElementById('btnAddPtr').addEventListener('click', () => camAdd('PTR'));
+  document.getElementById('btnAddPb').addEventListener('click', () => camAdd('PB'));
+  document.getElementById('btnCamSalvar').addEventListener('click', camSalvar);
+  document.getElementById('btnCamLimpar').addEventListener('click', camLimparForm);
+  document.getElementById('btnImportar').addEventListener('click', camImportar);
+  document.getElementById('camFiltroVis').addEventListener('change', renderizarCameras);
+  document.getElementById('camBusca').addEventListener('input', renderizarCameras);
+  document.getElementById('btnCamCsv').addEventListener('click', camBaixarCsv);
+  document.getElementById('btnCamPdf').addEventListener('click', camGerarPdf);
+  document.getElementById('btnCamCopiar').addEventListener('click', () => {
+    const lista = camFiltrados();
+    if (!lista.length) { mostrarAviso('Nada para copiar.', 'erro'); return; }
+    copiarTexto(camTextoLista(lista), 'Controle de câmeras copiado.');
+  });
+  camAdd('PTR');   // formulário já começa com o PTR_01
+
+  document.querySelectorAll('nav button').forEach(b => b.addEventListener('click', () => trocarAba(b.dataset.aba)));
+  document.getElementById('numero').addEventListener('input', tratarDigitacaoNumero);
+  document.getElementById('numero').addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') { ev.preventDefault(); document.getElementById('equipe').focus(); }
+  });
+  document.getElementById('equipe').addEventListener('input', mostrarSugestoes);
+  document.getElementById('equipe').addEventListener('keydown', teclaNaEquipe);
+  document.getElementById('btnRegistrar').addEventListener('click', registrarOcorrencia);
+  document.getElementById('btnEncerrar').addEventListener('click', encerrarPlantao);
+  document.getElementById('filtroEquipe').addEventListener('input', renderizarConsulta);
+  document.getElementById('btnCopiarTodas').addEventListener('click', () => {
+    const lista = ocorrenciasFiltradas();
+    if (!lista.length) { mostrarAviso('Nada para copiar.', 'erro'); return; }
+    copiarTexto(montarTextoResumo(lista), lista.length + ' ocorrência(s) copiadas para colar no relatório.');
+  });
+  document.getElementById('btnConectar').addEventListener('click', () =>
+    conectarNuvem(document.getElementById('cfgFirebase').value, document.getElementById('codSala').value, false));
+  document.getElementById('btnDesconectar').addEventListener('click', desconectarNuvem);
+
+  // Formulário já vem preenchido com a nuvem padrão
+  document.getElementById('cfgFirebase').value = CONFIG_PADRAO;
+  document.getElementById('codSala').value = SALA_PADRAO;
+
+  // Decide como abrir: nuvem salva > nuvem padrão > modo local (se o usuário desconectou)
+  let salva = null, semNuvem = false;
+  try {
+    salva = JSON.parse(localStorage.getItem(CHAVE_NUVEM) || 'null');
+    semNuvem = localStorage.getItem(CHAVE_SEM_NUVEM) === '1';
+  } catch (e) { /* ignora */ }
+
+  if (salva && salva.cfg && salva.sala) {
+    carregando = true; renderizarTudo();
+    conectarNuvem(salva.cfg, salva.sala, true);
+  } else if (!semNuvem) {
+    carregando = true; renderizarTudo();
+    conectarNuvem(CONFIG_PADRAO, SALA_PADRAO, true);
+  } else {
+    carregarLocal();
+    renderizarTudo();
+  }
+}
+// FIM FUNÇÃO: iniciarApp
+
+iniciarApp();
+</script>
+</body>
+</html>
